@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     const deleteButton = document.createElement("button");
                     deleteButton.textContent = "Delete";
+                    deleteButton.classList.add("delete-button")
                     deleteButton.onclick = function () {
                         deleteTask(task.id);
                     };
@@ -61,3 +62,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loadTasks();
 });
+
+
